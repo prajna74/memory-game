@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body onload="load()">
+    <div class="modal" id="rules">
+        <div class="modal-body">
+            <span class="close" id="rclose">&times;</span>
+            <h3>Hello there!</h3>
+            <p>Wanna check how good your memory is!?</p>
+            <p>Match the images within 1 minute to know if you have to order Badam or not😝</p>
+            <div id="button-container">
+                <button  id="who-are-we" class="btn" onclick="startime()">Start</button>
+            </div>
+        </div>
+    </div>
+    <div class="heading">
+    <h1>Memory game</h1>
+    <p class="time">01:00</p>
+    </div>
+    <table>
+        <tr>
+            <td>
+                   <div>
+                   <img src="images/bgimg.jpg"  id="r1c1" onclick="replyclick()">
+                   </div>
+                </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg" id="r1c2" onclick="replyclick()">
+                </div>
+            </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg" id="r1c3" onclick="replyclick()">
+                </div>
+            </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg"  id="r1c4" onclick="replyclick()">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg" id="r2c1"   onclick="replyclick()">
+                </div>
+            </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg"  id="r2c2"  onclick="replyclick()">
+                </div>
+            </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg"  id="r2c3" onclick="replyclick()">
+                </div>
+            </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg"  id="r2c4"  onclick="replyclick()">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg" id="r3c1"  onclick="replyclick()">
+                </div>
+            </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg" id="r3c2"  onclick="replyclick()">
+                </div>
+            </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg"  id="r3c3"  onclick="replyclick()">
+                </div>
+            </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg" id="r3c4"  onclick="replyclick()">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg"  id="r4c1"   onclick="replyclick()">
+                </div>
+            </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg"  id="r4c2"   onclick="replyclick()">
+                </div>
+            </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg"  id="r4c3"  onclick="replyclick()">
+                </div>
+            </td>
+            <td>
+                <div >
+                <img src="images/bgimg.jpg"  id="r4c4"  onclick="replyclick()">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="modal" id="congo">
+        <div class="modal-body">
+            <span class="close" id="cclose">&times;</span>
+            <h3>Congratulations!!</h3>
+            <p>You eat badam,don't you?</p>
+        </div>
+    </div>
+    <div class="modal" id="sorry">
+        <div class="modal-body">
+            <span class="close" id="closee">&times;</span>
+            <h3>Sorry!You lost!</h3>
+            <p>Don't worry!Go eat some badam and come back stronger!😝</p>
+            <div id="button-container">
+                <button  id="who-are-we" class="btn" onclick=window.location.reload()>Try Again</button>
+            </div><br>
+            <div id="button-container">
+                <button  id="who-are-we" class="btn" onclick=window.close()>Exit</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" type="text/javascript" ></script>
+</body>
+</html>
